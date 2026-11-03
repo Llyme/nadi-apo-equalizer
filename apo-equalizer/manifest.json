@@ -1,0 +1,26 @@
+{
+  "id": "apo-equalizer",
+  "name": "Equalizer",
+  "description": "Equalizer APO, from NADI: as many bands as you like, presets, each speaker's volume and delay, and the preamp at hand on its widget. Switched off, Equalizer APO is given back what it read before.",
+  "version": "1.0.0",
+  "kind": "luau",
+  "main": "main.luau",
+  "default_on": false,
+  "helper": {
+    "windows": "bin/apo-helper.exe"
+  },
+  "budget": {
+    "call_ms": 60,
+    "memory_mb": 24
+  },
+  "permissions": {},
+  "widgets": [
+    {
+      "id": "eq",
+      "name": "Equalizer",
+      "description": "The preamp at hand; popped out, the whole equalizer",
+      "place": "bottom-right",
+      "rank": 5
+    }
+  ]
+}
